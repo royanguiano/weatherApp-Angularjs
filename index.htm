@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="weatherApp">
+
+<head>
+    <title>Introduction to AngularJS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- load angular via CDN -->
+    <script src="https://code.angularjs.org/1.7.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.2/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.2/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+    <script src="services.js"></script>
+    <script src="controllers.js"></script>
+    <script src="directives.js"></script>
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!/weather">weather</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <div ng-view class="container"></div>
+</body>
+
+</html>

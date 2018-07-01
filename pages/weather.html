@@ -1,0 +1,14 @@
+<p><a href="#/">Go Back to Search</a></p>
+<div class="containerInfo">
+    <h4>Weather Results</h4>
+    <div class="numberDays">Choose Days: 
+        <a ng-class="{ 'card-panel teal lighten-2' : days === '2'}" href="#!weather/2">2</a> | 
+        <a ng-class="{ 'card-panel teal lighten-2' : days === '5'}" href="#!weather/5">5</a> | 
+        <a ng-class="{ 'card-panel teal lighten-2' : days === '7'}" href="#!weather/7">7</a> 
+    </div>
+</div>
+<ul class="collapsible" data-collapsible="accordion">
+    <li ng-repeat="w in data">
+        <search-result weather-day="w" convert-to-fah="convertToFah(degK)" convert-date="convertDate(d)" dateFormat="MMMM d,y"></search-result>
+    </li>
+</ul>

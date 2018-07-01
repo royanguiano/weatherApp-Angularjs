@@ -1,0 +1,29 @@
+html, body {
+    font-size: 1.1em;
+}
+
+.continer{
+    margin: 20px auto!important;
+    max-width: 50%;
+}
+
+a btn{
+    float: right;
+}
+.temp{
+    float: left;
+}
+.date{
+    float: right;
+}
+.desc{
+        margin: 10px 10px;
+    padding: 5px 10px;
+}
+.card-panel{
+    padding: 0;
+    color: white;
+}
+.containerInfo{
+    text-align: center;
+}

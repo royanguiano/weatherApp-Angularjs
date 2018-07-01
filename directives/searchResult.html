@@ -1,0 +1,12 @@
+<div class="collapsible-header">
+    <i class="material-icons">filter_drama</i>
+    <span class="temp">
+        Temp: {{ convertToFah({degK: weatherDay.temp.day}) }}
+    </span>
+    <span class="date">
+        {{ convertDate({ d: weatherDay.dt })| dateFormat: date }} 
+    </span>
+    <span class="desc"> 
+        Description: {{ weatherDay.weather[0].description }}
+    </span>
+</div>
